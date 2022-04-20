@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: List Github Enviroment
-        run: echo GH_${{GITHUB_JOB}}
+        run: echo GH_${{github.job}}
