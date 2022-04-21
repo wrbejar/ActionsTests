@@ -11,4 +11,4 @@ jobs:
       - name: List Github Enviroment
         run: |
           echo GH_${{github.ref_name}} GH_${{github.repository_owner}}
-          echo GH_${{github.repository_owner}}
+          echo GH_${{github.job}}
