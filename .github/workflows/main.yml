@@ -9,4 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: List Github Enviroment
-        run: echo GH_${{github.ref_name}}
+        run: |
+          echo GH_${{github.ref_name}}
+          echo GH_${{github.repository_owner}}
