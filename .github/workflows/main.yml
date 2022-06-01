@@ -12,3 +12,4 @@ jobs:
         run: |
           echo GH_${{github.ref_name}} GH_${{github.repository_owner}}
           echo GH_${{github.repositoryUrl}}
+          echo ${{github.ref_name}}
