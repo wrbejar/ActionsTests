@@ -10,6 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: List Github Enviroment
         run: |
-          echo GH_${{github.ref_name}} GH_${{github.repository_owner}}
+          echo GH_${{github.ref_name}} 
+          echo GH_${{github.repository_owner}}
           echo GH_${{github.repositoryUrl}}
-          echo ${{github.ref_name}}
+          echo ${{github.ref_type}}
